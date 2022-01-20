@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+*, 
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.textinnehåll {
+	width: 45%;
+	padding: 30px;
+	display: inline;
+	float: left;
+}
+
+.contact img{
+	float:left;
+	width: 250px;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: inline-block; 
+}
+
+.contact-form{
+	clear: both;
+    width: 400px;
+    margin: 0 auto;
+}
+.contact-form form { 
+	padding: 30px;
+	font-family: 'Dosis', sans-serif;
+	display: inline-block; 
+}
+
+.contact-form form label {
+	border-radius: 20px;
+}
+
+.contact-form form input{
+	 border: none; 
+	 border-bottom: 2px solid #889e81;
+	 padding: 10px;
+	 outline: none;
+	 margin-top: 10px;
+	 border-radius: 5px;
+ }
+ 
+.contact-form form label nickname, user_name{
+	color: #889e81; 
+	position: absolute;
+	pointer-events: none;
+	border-bottom: 2px solid #889e81;
+ }
+ 
+
+.contact-form form textarea{
+	border: none;
+	border-bottom: 2px solid #889e81;
+	outline: none;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 10px;
+ }
+
+.contact-form form p{
+	font-size: 0.8rem;
+	padding: 20px;
+}
+.social-menu{
+	width: 33%;
+	display: inline-block;
+	float: right; 
+}
+
+ .social-menu ul { 
+	position: absolute;
+	float: right;
+	top: 50%;
+	transform: translate(-75%, -50%);
+}
+ 
+.social-menu ul li {
+	list-style: none;
+	margin: 1px 15px;
+	margin-bottom: 30px;
+}
+ 
+ .social-menu ul li .fab {
+	font-size: 35px; 
+	line-height: 135px;
+	transition: .6s;
+	color: #000;
+	position: relative; 
+	bottom: 35px;
+} 
+ 
+.social-menu ul li .fab:hover {
+	 color: #fff; 
+}
+  
+.social-menu ul li a /*insta*/{ 
+	position: relative;
+	display: block;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: #889e81;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+	margin-left: 350px;
+}
+
+
+.social-menu ul li a:hover {
+	 transform: translate(0, -10px); 
+}
+
+@media screen and (max-width: 780px) {
+	
+	.textinnehåll{
+		width: 40%;
+	}
+	
+	.social-menu ul{
+		display: inline-block; 
+		float: none;
+		margin-left: 0;
+		transform: translate(-75%, -120%);
+	}
+	
+	.form{
+		padding: 0;	
+	}
+	
+}
+ 
+@media screen and (max-width: 400px) { 
+	.contact{
+		display: flex;
+	}
+	
+	.contact img{
+		margin-left: auto;
+		margin-right: auto;
+		height:250px;
+	}
+	
+	.form{
+		padding: 0;	
+	}
+	
+	.social-menu{
+		display: inline-block;
+	}
+	
+	.social-menu ul{
+		display: inline-block; 
+		float: none;
+		margin-left: auto;
+		margin-right:auto;
+		transform: translate(-75%, 70%);
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	
+	.social-menu ul li{
+		display: inline-block; 
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		margin-left: 0;
+	}
+	
+	.social-menu ul li a .insta{
+		display: inline-block; 
+	}
+	
+	.textinnehåll{
+		width: 100%;
+	}
+	
+}
+ 

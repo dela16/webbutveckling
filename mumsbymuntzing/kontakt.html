@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv"> 
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="Veganska bakrecept!">
+		<link rel="stylesheet" href="mbmmain.css" media="screen">
+		<link rel="stylesheet" href="kontakt.css" media="screen">
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/dd0c43a00c.js" crossorigin="anonymous"></script>
+		<title>MumsByMuntzing - Veganska bakrecept!</title> 
+</head>
+
+<body>
+<div class="container">
+	<header>
+		<a href="index.html"><img class="muffin" src="bilder/MBMmuffin3.png" alt="Startsida med texten Mums by Muntzing"></a>
+		<img class="MBM" src="bilder/MumsbyMuntzing.png" alt="Logga i form av muffin">  
+	</header>
+	<nav role="navigation">
+		<div id="menuToggle">
+			<input id="is-open-input" type="checkbox">
+			<span></span>
+			<span></span>
+			<span></span>
+			<div class="topnav input-icons">
+				<a href="mbmrecept.html"><i class="fas fa-bread-slice"></i> Recept</a>
+				<a href="mbmmiljo.html"><i class="fas fa-seedling"></i> Miljö</a>
+				<a href="mbmhalsaotraning.html"><i class="fas fa-running"></i> Hälsa&Träning</a>
+				<a href="omoss.html"><i class="fas fa-users"></i> Om oss </a>
+				<a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt </a>
+				<form class="search">
+					<i class="fa fa-search icon"></i>
+					<input type="search" id="search" name="search">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="contact">
+		<img src="bilder/sofia.png" alt="Glad tjej på utegym">
+	</div>
+	<div class="textinnehåll">
+		<h2>Kontakta mig!</h2><br>
+		<p> Här finner ni all information om ni vill kontakta mig, jag finns också på andra sociala medier! <br>
+			Ni kan även här skriva om det är någon speciell bakelse ni vill att jag testar eller om det är någon ingrediens som ni vill att jag har med eller tar bort.<br>
+			Jag testar gärna nya saker!
+		</p>
+	</div>
+	<div class="contact-form">
+		<form action="form.html" method="post">
+			<div>
+				<label for="nickname">Enter nickname </label><br> 
+				<input type="text" id="nickname" name="nickname">
+			</div> <br>
+			<div>
+				<label for="user_email"> Enter e-mail </label><br> 
+				<input type="email" id="user_email" name="user_email" required>
+			</div> <br>
+			<div>
+				<label for="content"> Write message </label>
+			</div>
+			<div>
+				<textarea rows="10" cols="30" id="content" name="content" placeholder="Skriv något kul!"></textarea>
+			</div><br>
+			<div>
+				<input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="Ja, tack"> <label for="nyhetsbrev">Ja, jag vill ha nyhetsbrev!</label>
+			</div><br>
+			<div>
+				<input type="submit" value="Skicka!">
+			</div>
+			<p> *All information hanteras enligt GDPR.</p>
+		</form>
+	</div>
+	<div class="social-menu"> 
+		<ul>
+			<li><a href="länk_till_hennes_insta"> <!--class="insta"--><i class="fab fa-instagram"></i></a></li>
+			<li><a href="länk_till_hennes_facebook"> <!--class="fb"--><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="länk_till_hennes_youtube"> <!--class="yt"--><i class="fab fa-youtube"></i></a></li>
+		</ul>
+	</div>
+	<footer>
+	  <p><em> Footer Information</em></p>
+	</footer>
+</div>
+</body>
+</html>

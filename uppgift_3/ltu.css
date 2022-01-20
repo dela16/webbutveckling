@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body { /*Här satte jag padding (tjock ram isch) runt hela hemsidans body då det ser bättre ut på skärmen*/ 
+	padding: 20px;
+	width: 800px;
+}
+h1, h2{ /*här har jag valt typsnitt och en ljusgrå bakgrund till de olika texterna textvarianterna*/ 
+	font-family: Arial;
+	background-color: #eee;
+
+}
+
+h3, h4 {
+	font-family: Helvetica;
+	background-color: #eee;
+}
+
+h5, h6 {
+	font-family: sans-serif;
+	background-color: #eee;
+}
+p {
+	font-family: Candara;
+
+}
+
+.lista li{
+	list-style-type:circle; /* här valde jag att ändra utseendet på listans punkter, obs endast på den lista som hade classnamn lista*/
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+}
+
+caption { /*detta var namnet för tabell1 och tabell 2 som jag ville ändra utseendet på*/ 
+	font-weight: bold; 
+	color: #404040;
+} 
+
+.tabell1{ /* Här ger vi lite utseende till tabell 1*/
+	background-color:  #ffcccc;
+	border: 1px solid black;
+	margin-left: 50px; /* med margin så skapar vi luft mellan de berörda områdena, i det här fallet tabell 1 och sidans hemsida*/
+	margin: 30px 30px;
+	font-family: sans-serif;
+}
+
+ul li { /*här får listorna lite utseende*/
+	font-family: Verdana;
+	font-style: italic;
+}
+
+.tabell2 { /*här ger jag tabell 2 lite stil till sitt utseende*/ 
+	font-family: Helvetica; /* detta är bara rubriken*/ 
+	background-color: #ffcc99;
+	margin-left: 50px;
+	margin: 30px 30px;
+}
+.table2, th {
+	border-bottom: 1px solid black;  /* här ger vi en ram under tabellens rubrik*/
+}
+
+tbody, td { /* här får texten i tabellerna ett annat typsnitt och ram runt texten*/
+	font-family: Candara;
+	border: 1px solid black;
+}
+
+.forskning li{ /* jag valde här att göra en klass av en del av koden, 
+detta för att jag inte ville att den skulle ha samma font-stil som de andra listorna (li)*/
+	font-style: normal;
+}
+
+.foot { /* här ändrade jagbakgrundsfärg, textfärg, text-stil och text-storlek*/
+	background-color: #8A4B08; 
+	color: white;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#source { /* source är ett id som är definierat i html filen, jag ger den här en placering (höger) och en text-färg. */
+	float: right;
+	color:#009900;
+}
+
+#source a:hover {  /* den här gör så att något ska hända när jag har pekaren över den berörda delen, i det här fallet id:et source*/
+ background-color: #FA58AC;	/* denna innebär att när jag för pekaren över länken (a) så byter den bakgrundsfärg*/
+}

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+*, 
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.banner img{
+	width: 1000px;
+}
+	
+.textinnehåll h1{
+	text-align: center;	
+}
+
+.textinnehåll p {
+	text-align: left;
+	padding: 15px;
+}
+
+.img1{
+	text-align: center;
+}
+
+.img1 img{
+	border-radius: 5px;
+	height: auto;
+}
+
+.work-out{
+	height: 400px; 
+	font-family: 'Dosis', sans-serif;
+	font-size: 1rem;
+	text-align: left;
+}
+
+.work-out.top{
+	background: #e8e8e8;
+	padding: 15px; 
+}
+
+.work-out.bottom{
+	margin-top: 0;
+	background: #bbbbbb;
+	padding: 20px; 
+}
+
+.work-out p{ 
+	display: inline;
+}
+
+.work-out p img{ 
+	width: 330px;
+	margin: 20px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+	
+	.banner img{
+	max-width: 780px;
+	}
+
+	.work-out.top{
+		height: 500px;
+	}
+	.work-out.bottom{
+		height: 500px;
+	}
+	
+	.footer{
+	margin-top:0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.banner img{
+	max-width: 400px;
+	}
+	
+	.img1 img{
+		width: 100%;
+	}	
+	
+	.work-out.top{
+		height: 1100px;
+	}
+	
+	.work-out.top img{ 
+		width: 100%;
+		max-width: 360px;
+		padding-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.work-out.bottom{
+		height: 1100px;
+	}
+	
+	.work-out.bottom img{ 
+		width: 100%;
+		max-width: 360px;
+		padding-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.footer{
+	margin-top:0 px;
+	}
+}

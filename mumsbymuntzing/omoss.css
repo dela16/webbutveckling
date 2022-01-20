@@ -1,0 +1,145 @@
+@charset "UTF-8";
+*, 
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.profpic{
+	text-align: center;
+}
+.profpic img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.textinnehåll {
+	padding: 20px;
+}
+
+.timeline { 
+	position: relative; 
+	padding: 40px;
+	box-sizing: border-box;
+	font-size: 1vw; 
+	overflow: hidden; 
+}
+
+.time h4{
+	font-size: 2vw;
+	
+}
+
+.timeline ul{
+	margin:0;
+	padding: 0;
+}
+
+.timeline ul li {
+	list-style: none;
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+.timeline::before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: #889e81;
+}
+
+.timeline ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+	clear: both; 
+}
+
+.timeline ul li:nth-child(even){
+	float: right;
+	text-align: left;
+	clear: both; 
+}
+
+.textinnehåll h3{ /*Varför byter den färg när jag ndrar storlek?*/
+	color: #889e81;
+}
+
+.textinnehåll p{
+	padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd)::before{ /*det här är prickarna på tidslinjen*/
+	content: '';
+	position: absolute;
+	top: 24px;
+	right: -9px;
+	width: 15px;
+	height: 15px;
+	background: #889e81;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px #eee;
+}
+
+.timeline ul li:nth-child(even)::before{ 
+	content: '';
+	position: absolute;
+	top: 24px;
+	left: -6px; 
+	width: 15px;
+	height: 15px;
+	background: #889e81;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px #eee;
+}
+
+.timeline ul li:nth-child(odd) .time {
+	position: absolute;
+	top: 12px;
+	right: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: #889e81;
+	color: #eee;
+	border-radius: 24px;
+	box-shadow: 0 0 0 3px #eee;
+}
+
+.timeline ul li:nth-child(even) .time {
+	position: absolute;
+	top: 12px;
+	left: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: #889e81;
+	color: #eee;
+	border-radius: 24px;
+	box-shadow: 0 0 0 3px #eee;
+}
+
+@media screen and (max-width: 780px) {
+	
+}
+
+
+@media screen and (max-width: 400px) {
+	.timline{
+		padding: 0;
+	}
+	
+	.textinnehåll h3{
+		font-size: 1.5rem; /*Den här får en speciell just för att dets ka se bra ut på tidslinjen*/
+	}
+	
+	.timeline ul li {
+		padding: 10px 0px 10px 0px;
+	}
+}

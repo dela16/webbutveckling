@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.form2 {
+	display: inline-block;
+	padding: 20px;
+	font-family: Arial;
+	border-style: outset; /* denna gör så att vi får en 3D känsla av kanten*/
+	border-radius: 3px;
+	background-color: #eee;
+
+} 
+
+::placeholder{ /*Med hjälp av den här kan jag ändra typsnittet inne i breskrivnings-rutan. Min placeholder text.*/
+	font-family: Arial; /* Ursprungs typsnittet var så fult så bytte*/
+}
+
+p{
+	font-weight: bold; /* Jag ville att "rubrikerna" skulle vara feta men när jag satte de i h1 eller annan storlek så blev de för stora och 
+	inte så som jag tänkt så då gjorde jag en paragraf av det och gjorde den fet vilket gjorde den som jag ville. Nu när jagvaliderade den 
+	i wave så vill de gärna ha rubriker dock... men då måste jag finurla mer på hur jag kan lösa det stora glappet. Nästa inlämning!*/
+	margin-bottom: 5px; /*Denna är till för att skapa lite andrum mellan rutorna och "rubriken", annars blev allt kloss-an vilket var fult*/
+	color: #ff6a00;
+	background-color: white;
+	
+}
+
+input, textarea {
+	border:1px solid black;
+	border-radius: 5px; /* Här ger jag textrutorna en starkare kontrast och gör kanterna mjukare*/
+}
+
+.button {
+	background-color: #006666;
+	color: #FFFFFF; /*Knapparna får lite roligare färg*/
+}
+
+.icon { /*Här får iconerna som jag hämtade lite stil och färg*/
+	background: #006666;
+	color: white; 
+	width: 50px; 
+	text-align: center; 
+	border-radius: 5px;
+	height: 20px;
+}
