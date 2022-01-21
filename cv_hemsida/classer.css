@@ -27,7 +27,7 @@ html {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  height: 1400px;
+  height: 1300px;
   background-color: #898b8a;
 }
 
@@ -39,7 +39,7 @@ html {
   margin: 50px auto;
   padding: 20px 0;
   width: 95%;
-  height: 1250px;
+  height: 1150px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@ html {
   line-height: normal;
   position: relative;
   width: 50%;
-  padding: 20px 40px;
+  padding: 10px 40px;
   box-sizing: border-box;
 }
 
@@ -155,39 +155,37 @@ html {
 }
 
 .computerKnowledge {
-  max-width: 1000px;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 400px;
   background-color: #fff;
-  column-count: 2;
-  column-gap: 10%;
-  column-width: 500px;
 }
+
 .computerKnowledge h1 {
   text-align: center;
 }
 
-.computerKnowledge .fas {
-  font-size: 100px;
-  margin-left: 13%;
-  margin-top: 20px;
+.computerKnowledge #desktop {
+  font-size: 8em;
+  margin-left: 30%;
+  margin-top: 6%;
+  display: inline-block;
   float: left;
 }
 
+.computerPrograms ul {
+  margin-left: 10%;
+  margin-top: 2%;
+  display: inline-block;
+}
+
 .computerPrograms ul li {
-  padding-top: 20px;
-  margin-left: 20%;
   font-size: 1em;
-  list-style: none;
-  float: left; /*Vi kan ju bara göra ett table med...?*/
 }
 
 .skills {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  height: 450px;
+  height: 250px;
   background-color: #ffa5a5;
 }
 
@@ -195,23 +193,21 @@ html {
   text-align: center;
 }
 
-.column {
-  float: left;
-  width: 33%;
-  padding-left: 100px;
-  font-size: 1.2 em;
+.column #car {
+  display: inline-block;
+  font-size: 4em;
+  margin-left: 30%;
 }
 
-.column .fas {
+.column #flag {
+  display: inline-block;
   font-size: 4em;
-  margin-left: 13%;
-  margin-top: 20px;
+  margin-left: 20%;
 }
 
 .column ul li {
-  padding-top: 20px;
-  margin-left: 20%;
   font-size: 1em;
+  display: block;
 }
 
 .extras {
