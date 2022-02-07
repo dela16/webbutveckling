@@ -85,11 +85,25 @@ footer {
     display: inline-block;
     max-width: 100%;
   }
+  .topnav,
+  .search {
+    display: inline-block;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 998px) {
   /*Padda portrait*/
+  .topnav,
+  .search {
+    display: inline-block;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 999px) {
 }

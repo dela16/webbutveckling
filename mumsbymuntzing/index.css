@@ -61,7 +61,7 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
     margin: 2rem;
     height: auto;
   }
@@ -71,18 +71,32 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 998px) {
   /*Padda portrait*/
-  .grid-container {
+  .topnav,
+  .search {
+    display: inline-block;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .banner img {
     margin-left: auto;
     margin-right: auto;
-    display: table;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: auto;
   }
 
   .grid-item {
-    margin-bottom: 10px;
+    margin: 0.7rem;
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 999px) {
 }

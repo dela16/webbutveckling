@@ -116,11 +116,17 @@
 
   .grid-item {
     margin-left: auto;
-	margin-right: auto; 
+    margin-right: auto;
   }
 }
 
-@media (min-width: 769) and (max-width: 992px) {
+@media (min-width: 769) and (max-width: 998px) {
+  .topnav,
+  .search {
+    display: inline-block;
+    width: 100%;
+    justify-content: space-evenly;
+  }
   .grid-container {
     margin-left: auto;
     margin-right: auto;
@@ -137,5 +143,5 @@
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 999px) {
 }
