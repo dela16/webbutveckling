@@ -193,21 +193,23 @@ html {
   text-align: center;
 }
 
-.column #car {
+.license {
   display: inline-block;
-  font-size: 4em;
-  margin-left: 30%;
+  margin-left: 38%;
+  padding-top: 5%;
 }
 
-.column #flag {
-  display: inline-block;
+.license #car {
   font-size: 4em;
-  margin-left: 20%;
 }
 
-.column ul li {
-  font-size: 1em;
-  display: block;
+.languages {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.languages #flag {
+  font-size: 4em;
 }
 
 .extras {
@@ -222,37 +224,17 @@ html {
   text-align: center;
 }
 .extras p {
-  margin: 3%;
-  margin-top: 0%;
-}
-.jennie p {
-  background-color: #fff;
-  width: 50%;
-  padding: 10px;
-  font-style: italic;
+  margin-top: 3%;
   margin-left: 5%;
-  display: inline-block;
-}
-
-.jennie img {
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  margin-top: 5%;
-  margin-left: 10%;
-  display: inline-block;
-}
-
-.emilia p {
+  margin-right: 0;
   background-color: #fff;
   width: 50%;
   padding: 1%;
   font-style: italic;
-  margin-right: 5%;
   display: inline-block;
 }
 
-.emilia img {
+.extras img {
   width: 15%;
   height: 15%;
   border-radius: 50%;
@@ -261,40 +243,10 @@ html {
   display: inline-block;
 }
 
-.daniel p {
-  background-color: #fff;
-  width: 50%;
-  padding: 1%;
-  font-style: italic;
-  margin-left: 5%;
-  display: inline-block;
-}
-
-.daniel img {
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  margin-top: 5%;
-  margin-left: 10%;
-  display: inline-block;
-}
-
-.allan p {
-  background-color: #fff;
-  width: 50%;
-  padding: 1%;
-  font-style: italic;
-  margin-left: 5%;
-  display: inline-block;
-}
-
-.allan img {
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  margin-top: 5%;
-  margin-left: 10%;
-  display: inline-block;
+.extras .allan p {
+  margin-bottom: 3%;
+  margin-top: 0; 
+justify-content: center;
 }
 
 .footer p {
