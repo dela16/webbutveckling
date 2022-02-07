@@ -12,11 +12,10 @@ html {
 }
 
 .about {
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   background-color: #f6f6f6;
-  height: 900px;
+  height: auto;
 }
 
 .about a {
@@ -24,22 +23,19 @@ html {
 }
 
 .experiences {
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  height: 1300px;
+  padding: 0;
+  height: auto;
   background-color: #898b8a;
 }
 
 .timeline {
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  margin: 50px auto;
-  padding: 20px 0;
+  padding: 2%;
   width: 95%;
-  height: 1150px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -49,7 +45,7 @@ html {
   content: "";
   position: absolute;
   left: 50%;
-  width: 2px;
+  width: 0.1rem;
   height: 100%;
   background: #000;
 }
@@ -64,7 +60,7 @@ html {
   line-height: normal;
   position: relative;
   width: 50%;
-  padding: 10px 40px;
+  padding: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -81,31 +77,32 @@ html {
 }
 
 .text {
-  padding-bottom: 20px;
+  padding-bottom: 0.7rem;
 }
 
 .timeline ul li:nth-child(odd)::before {
   content: "";
   position: absolute;
-  top: 40px;
-  right: -6px;
-  width: 10px;
-  height: 10px;
+  top: 2rem;
+  right: -0.4rem;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #f4abc4;
+  box-shadow: 0 0 0 0.2rem #f4abc4;
 }
 
 .timeline ul li:nth-child(even)::before {
   content: "";
   position: absolute;
-  top: 40px;
-  left: -4px;
-  width: 10px;
-  height: 10px;
+  top: 2rem;
+  top: 2rem;
+  left: -0.3rem;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #f4abc4;
+  box-shadow: 0 0 0 0.2rem #f4abc4;
 }
 
 .timeline ul li h2 {
@@ -117,7 +114,7 @@ html {
 }
 
 .timeline ul li p {
-  margin: 10px 0 0;
+  margin: 1rem 0 0;
   padding: 0;
 }
 
@@ -128,35 +125,41 @@ html {
 
 .timeline ul li:nth-child(odd) .year h2 {
   position: absolute;
-  top: 23px;
-  right: -165px;
+  top: 1rem;
+  right: -10rem;
   margin: 0;
-  padding: 8px 16px;
+  padding: 0.8rem;
   background: #000;
-  border-radius: 0px;
   color: #fff;
-  box-shadow: 0 0 0 3px #eee;
+  box-shadow: 0 0 0 0.2rem #eee;
+  width: 8rem;
+  text-align: center;
+  height: 3rem;
 }
 
 .timeline ul li:nth-child(even) .year h2 {
   position: absolute;
-  top: 23px;
-  left: -165px;
+  top: 1rem;
+  left: -10rem;
   margin: 0;
-  padding: 8px 16px;
+  padding: 0.8rem;
   background: #000;
-  border-radius: 0px;
   color: #fff;
-  box-shadow: 0 0 0 3px #eee;
+  box-shadow: 0 0 0 0.2rem #eee;
+  width: 8rem;
+  text-align: center;
+  height: 3rem;
 }
 
-.year h2 {
-  padding: 10px;
+.experiencesending {
+  width: 100%;
+  height: 1rem;
+  background-color: #898b8a;
 }
-
 .computerKnowledge {
-  height: 400px;
+  height: auto;
   background-color: #fff;
+  padding: 1rem;
 }
 
 .computerKnowledge h1 {
@@ -164,7 +167,7 @@ html {
 }
 
 .computerKnowledge #desktop {
-  font-size: 8em;
+  font-size: 8rem;
   margin-left: 30%;
   margin-top: 6%;
   display: inline-block;
@@ -178,19 +181,20 @@ html {
 }
 
 .computerPrograms ul li {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .skills {
-  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  height: 250px;
+  height: auto;
   background-color: #ffa5a5;
+  padding: 1rem;
 }
 
 .skills h1 {
   text-align: center;
+  padding: 0;
 }
 
 .license {
@@ -200,7 +204,7 @@ html {
 }
 
 .license #car {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .languages {
@@ -209,99 +213,80 @@ html {
 }
 
 .languages #flag {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
-.extras {
-  max-width: 1000px; /*SKa bodyn vara x antal px och den här 100% utifrån det?*/
+.recommendations {
   margin-left: auto;
   margin-right: auto;
-  height: 98%;
+  height: auto;
   background-color: #898b8a;
 }
 
-.extras h1 {
+.recommendations h1 {
   text-align: center;
 }
-.extras p {
+.recommendations p {
   margin-top: 3%;
   margin-left: 5%;
   margin-right: 0;
   background-color: #fff;
   width: 50%;
-  padding: 1%;
+  padding: 2%;
   font-style: italic;
   display: inline-block;
 }
 
-.extras img {
+.recommendations img {
   width: 15%;
   height: 15%;
   border-radius: 50%;
-  margin-top: 5%;
+  vertical-align: 4rem;
   margin-left: 10%;
   display: inline-block;
 }
 
-.extras .allan p {
+.recommendations .allan p {
   margin-bottom: 3%;
-  margin-top: 0; 
-justify-content: center;
+  justify-content: center;
+}
+
+.recommendations .allan img {
+  vertical-align: -30%;
 }
 
 .footer p {
   width: 100%;
-  height: 100px; /*Hur gör man med höjd på såna här block?*/
+  height: auto;
   background-color: #f4abc4;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer a {
   color: #000;
 }
 
-/* @media screen and (max-width: 780px) {
-  .extras {
-    max-height: 2000px;
+@media (max-width: 768px) {
+  /*Mobilversion, Upp till padda portrait*/
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /*Padda portrait*/
+  .recommendations img {
+    vertical-align: 2rem;
   }
-
-  .jennie p {
-    max-width: 400px;
+  .recommendations .allan img {
+    vertical-align: -50%;
   }
+}
 
-  .jennie img {
-    max-width: 150px;
-    max-height: 150px;
+@media (min-width: 993px) {
+  /*Padda Landscape & Desktop*/
+  .recommendations img {
+    vertical-align: 1rem;
   }
-
-  .emilia p {
-    max-width: 400px;
+  .recommendations .allan img {
+    vertical-align: -60%;
   }
-
-  .emilia img {
-    max-width: 150px;
-    max-height: 150px;
-  }
-
-  .daniel p {
-    max-width: 400px;
-  }
-
-  .daniel img {
-    max-width: 150px;
-    max-height: 150px;
-  }
-
-  .allan p {
-    max-width: 400px;
-  }
-
-  .allan img {
-    max-width: 150px;
-    max-height: 150px;
-  }
-} */
-
-/* @media screen and (max-width: 400px) {
-} */
+}
