@@ -159,11 +159,12 @@ html {
 }
 
 .experiencesending h2 {
+  font-size: 1rem;
   text-align: center;
 }
 
 .experiencesending p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .computerKnowledge {

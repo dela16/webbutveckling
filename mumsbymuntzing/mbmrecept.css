@@ -1,143 +1,141 @@
 @charset "UTF-8";
 
-*, 
+*,
 *::before,
-*::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.grid-container{ 
-	display: grid;
-	grid-template-columns:  25% 25% 25% 25%; 
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
-.grid-item { /*bilderna*/
-	background: #bbbfca;
-	transition: .6s;
-	text-align: center;
-	font-family: 'Dosis', sans-serif;
-	width: 200px;
-	height:250px;
-	border-radius: 5px;
+.grid-item {
+  /*bilderna*/
+  background: #bbbfca;
+  transition: 0.6s;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
 }
 
 .grid-item img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-	border-radius: 5px 5px 0 0; 
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
-.textinnehåll{
-	font-family: 'Dosis', sans-serif;
-	text-align: left;  
-	padding: 10px;
+.textinnehåll {
+  font-family: "Dosis", sans-serif;
+  text-align: left;
+  padding: 10px;
 }
 
-.grid-item:hover{
-	background-position: center;
-	transform: scale(1.1);
+.grid-item:hover {
+  background-position: center;
+  transform: scale(1.1);
 }
 
 .grid-item i {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .grid-item a {
-	text-decoration: none;
-	color: #363d34;
+  text-decoration: none;
+  color: #363d34;
 }
 
 .meny {
-	float:left;
-	font-family: 'Dosis', sans-serif; 
-	padding: 20px; 
-	font-size: 18px;
+  float: left;
+  font-family: "Dosis", sans-serif;
+  padding: 20px;
+  font-size: 18px;
 }
-.meny ul{
-		list-style: none;
-		padding: 0;
-		width: 200px;
-		border-color: #698474;
-} 
-
+.meny ul {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  border-color: #698474;
+}
 
 .meny ul li {
-	padding: 5px;
-    border-radius: 3px;
-    position: relative;
-    border: solid #b2bec3;
-    border-width: 3px 3px 0 3px;
+  padding: 5px;
+  border-radius: 3px;
+  position: relative;
+  border: solid #b2bec3;
+  border-width: 3px 3px 0 3px;
 }
 
-		
-.meny  a {
-			color: #000000;
-			text-decoration: none;
-			display: block;
-			background-color: #fff;
+.meny a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
 }
-		
+
 .meny a:hover {
-			text-decoration: underline;
-			background-color: #e8e8e8;
-			color: #000000;
+  text-decoration: underline;
+  background-color: #e8e8e8;
+  color: #000000;
 }
 
-.meny .submeny{
-    position: absolute;
-    background: #fff;
-    left: -3px;
-    top: 30px;
-    border: solid #b2bec3;
-    border-width: 0 3px 3px 3px;
+.meny .submeny {
+  position: absolute;
+  background: #fff;
+  left: -3px;
+  top: 30px;
+  border: solid #b2bec3;
+  border-width: 0 3px 3px 3px;
 }
 
 .meny ul li ul li {
-	display: none;
-	width: 188px;
-	border: none;
-	font-style: italic;
-
+  display: none;
+  width: 188px;
+  border: none;
+  font-style: italic;
 }
 
 .meny ul li:hover ul li {
-	display: block;
+  display: block;
 }
 
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 100%;
+  }
 
-@media screen and (max-width: 780px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: 33% 33% 33%; 
-		padding: 20px;
-		max-width: 780px;
-	}
-	
+  .grid-item {
+    margin-left: auto;
+	margin-right: auto; 
+  }
 }
 
-@media screen and (max-width: 400px) { 
-	
-	.grid-container {
-		margin-left: auto;
-		margin-right: auto;
-		display: table;	
-	}
-	
-	.grid-item { 
-		margin-bottom: 10px;
-	}
-	
-	.meny{
-		margin-left: auto;
-		margin-right: auto;
-	}
+@media (min-width: 769) and (max-width: 992px) {
+  .grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+  }
+
+  .grid-item {
+    margin-bottom: 10px;
+  }
+
+  .meny {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-
-
-
+@media (min-width: 993px) {
+}
