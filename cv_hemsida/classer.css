@@ -61,26 +61,26 @@ html {
   position: relative;
   width: 50%;
   padding: 1.5rem;
-  box-sizing: border-box;
 }
 
 .timeline ul li:nth-child(odd) {
+  /*P-taggen*/
   float: left;
   text-align: right;
   clear: both;
+  padding-bottom: 0.7rem;
 }
 
 .timeline ul li:nth-child(even) {
+  /*P-taggen*/
   float: right;
   text-align: left;
   clear: both;
-}
-
-.text {
   padding-bottom: 0.7rem;
 }
 
 .timeline ul li:nth-child(odd)::before {
+  /*Pluppen på tisdlinjen*/
   content: "";
   position: absolute;
   top: 2rem;
@@ -93,6 +93,7 @@ html {
 }
 
 .timeline ul li:nth-child(even)::before {
+  /*Pluppen på tisdlinjen*/
   content: "";
   position: absolute;
   top: 2rem;
@@ -153,9 +154,18 @@ html {
 
 .experiencesending {
   width: 100%;
-  height: 1rem;
+  height: auto;
   background-color: #898b8a;
 }
+
+.experiencesending h2 {
+  text-align: center;
+}
+
+.experiencesending p {
+  font-size: 0.9rem;
+}
+
 .computerKnowledge {
   height: auto;
   background-color: #fff;
