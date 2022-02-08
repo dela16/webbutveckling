@@ -20,7 +20,7 @@
 }
 
 .image-gallery img {
-  margin-top: 8px;
+  margin-top: 0.7rem;
   vertical-align: middle;
   width: 100%;
 }
@@ -36,12 +36,21 @@
 }
 
 .streaming {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .streaming img {
-  height: 150px;
+  height: 70%;
   width: 30%;
   margin: 10px;
+}
+
+@media (min-width: 375px) and (max-width: 562px) {
+  .streaming img {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+  }
 }
 
 @media (max-width: 768px) {

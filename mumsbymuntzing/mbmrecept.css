@@ -9,10 +9,11 @@
 }
 
 .grid-container {
+  width: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 
 .grid-item {
@@ -21,14 +22,14 @@
   transition: 0.6s;
   text-align: center;
   font-family: "Dosis", sans-serif;
-  width: 200px;
-  height: 250px;
+  width: auto;
+  height: auto;
   border-radius: 5px;
 }
 
 .grid-item img {
-  height: 200px;
-  width: 200px;
+  height: auto;
+  width: auto;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
@@ -36,7 +37,7 @@
 .textinnehåll {
   font-family: "Dosis", sans-serif;
   text-align: left;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .grid-item:hover {
@@ -45,7 +46,7 @@
 }
 
 .grid-item i {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .grid-item a {
@@ -62,7 +63,7 @@
 .meny ul {
   list-style: none;
   padding: 0;
-  width: 200px;
+  width: 6rem;
   border-color: #698474;
 }
 
@@ -98,7 +99,7 @@
 
 .meny ul li ul li {
   display: none;
-  width: 188px;
+  width: 4rem;
   border: none;
   font-style: italic;
 }
@@ -107,7 +108,27 @@
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 562px) {
+  .container {
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid-item {
+    width: auto;
+    height: auto;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media (min-width: 563px) and (max-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
