@@ -283,7 +283,6 @@ margin-top: auto;
 
 @media (max-width: 768px) {
   /*Mobilversion, Upp till padda portrait*/
-
 .recommendations p{
   font-size: 0.6rem;
 }
