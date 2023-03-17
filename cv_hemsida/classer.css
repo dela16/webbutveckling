@@ -216,7 +216,8 @@ margin-top: auto;
 
 .license #car {
   font-size: 5rem;
-  display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .languages {
@@ -226,7 +227,8 @@ margin-top: auto;
 
 .languages #flag {
   font-size: 5rem;
-  display:inline-block; 
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .recommendations {
@@ -281,8 +283,79 @@ margin-top: auto;
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 562px){
+  .computerprograms {
+      display: inline-block;
+      margin-top: auto;
+    }
+  
+    .license {
+      display: inline-block;
+      margin-top: auto;
+    }
+  
+    .languages {
+      display: inline-block;
+      margin-top: auto;
+    }
+  
+    .languages #desktop {
+      font-size: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .languages #car {
+      font-size: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .languages #flag {
+      font-size: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+  
+    .recommendations p {
+      font-size: 0.6rem;
+    }
+}
+@media (min-width: 563px) and(max-width: 768px) {
   /*Mobilversion, Upp till padda portrait*/
+.computerprograms {
+    display: inline-block;
+    margin-top: auto;
+  }
+.license {
+    display: inline-block;
+    margin-top: auto;
+  }
+.languages {
+    display: inline-block;
+    margin-top: auto;
+  }
+
+  .languages #desktop {
+    font-size: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .languages #car {
+    font-size: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .languages #flag {
+    font-size: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
 .recommendations p{
   font-size: 0.6rem;
 }
