@@ -27,7 +27,7 @@ html {
   margin-right: auto;
   padding: 0;
   height: auto;
-  background-color: #898b8a;
+  background-color: #698269;
 }
 
 .timeline {
@@ -89,7 +89,7 @@ html {
   height: 0.7rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.2rem #f4abc4;
+  box-shadow: 0 0 0 0.2rem #C8B6A6;
 }
 
 .timeline ul li:nth-child(even)::before {
@@ -103,11 +103,11 @@ html {
   height: 0.7rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.2rem #f4abc4;
+  box-shadow: 0 0 0 0.2rem #C8B6A6;
 }
 
 .timeline ul li h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -155,7 +155,7 @@ html {
 .experiencesending {
   width: 100%;
   height: auto;
-  background-color: #898b8a;
+  background-color: #698269;
 }
 
 .experiencesending h2 {
@@ -167,32 +167,33 @@ html {
   font-size: 0.7rem;
 }
 
-.computerKnowledge {
-  height: auto;
+.competences{
   background-color: #fff;
   padding: 1rem;
 }
 
-.computerKnowledge h1 {
-  text-align: center;
+.competences h1{
+  text-align: center; 
 }
 
-.computerKnowledge #desktop {
-  font-size: 8rem;
-  margin-left: 30%;
-  margin-top: 6%;
+.computerprograms{
   display: inline-block;
-  float: left;
+  margin-top: auto;
+}
+.competences #desktop {
+  font-size: 5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.computerPrograms ul {
+.competences ul {
   margin-left: 10%;
   margin-top: 2%;
   display: inline-block;
 }
 
-.computerPrograms ul li {
-  font-size: 1rem;
+.competences ul li {
+  font-size: 0.9rem;
 }
 
 .skills {
@@ -200,7 +201,7 @@ html {
   margin-right: auto;
   height: auto;
   background-color: #ffa5a5;
-  padding: 1rem;
+  padding: 0.9rem;
 }
 
 .skills h1 {
@@ -209,29 +210,30 @@ html {
 }
 
 .license {
-  display: inline-block;
-  margin-left: 38%;
-  padding-top: 5%;
+display: inline-block;
+margin-top: auto; 
 }
 
 .license #car {
-  font-size: 4rem;
+  font-size: 5rem;
+  display: inline-block;
 }
 
 .languages {
   display: inline-block;
-  margin-left: 10%;
+  margin-top: auto;
 }
 
 .languages #flag {
-  font-size: 4rem;
+  font-size: 5rem;
+  display:inline-block; 
 }
 
 .recommendations {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  background-color: #898b8a;
+  background-color: #C8B6A6;
 }
 
 .recommendations h1 {
@@ -269,7 +271,7 @@ html {
 .footer p {
   width: 100%;
   height: auto;
-  background-color: #f4abc4;
+  background-color: #698269;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -281,6 +283,10 @@ html {
 
 @media (max-width: 768px) {
   /*Mobilversion, Upp till padda portrait*/
+
+.recommendations p{
+  font-size: 0.6rem;
+}
 }
 @media (min-width: 769px) and (max-width: 992px) {
   /*Padda portrait*/

@@ -23,12 +23,11 @@ body {
 #header p {
   font-style: bold;
   font-size: 3.5rem;
-  color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 .topnav {
-  background-color: #f4abc4;
+  background-color: #A4907C;
   display: inline-block;
   height: auto;
   width: 100%;
@@ -44,7 +43,7 @@ body {
 
 p {
   padding-left: 2rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .container {
@@ -103,7 +102,7 @@ p {
   margin-right: auto;
   width: 100%;
   padding: 1rem;
-  background-color: white;
+  background-color: black;
   text-decoration: none;
 }
 .gotopbtn .fas {
@@ -122,17 +121,23 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 375px) and (max-width: 562px) {
+@media (min-width: 35px) and (max-width: 562px) {
   .container {
     width: 100%;
   }
+  .container p{
+    font-size: small;
+  }
 
-  .projectItems img {
-    width: 100%;
-    margin-left: auto;
+  .projectItems h2{
+    font-size: 12;
+  }
+  /* .projectItems img {
+    width: 20%;
+    /* margin-left: auto; */
     margin-right: auto;
     display: flex;
-  }
+  } */
 
   .projectItems p {
     width: 100%;
