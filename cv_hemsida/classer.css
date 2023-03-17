@@ -170,6 +170,7 @@ html {
 .competences{
   background-color: #fff;
   padding: 1rem;
+  text-align:center;
 }
 
 .competences h1{
@@ -190,6 +191,7 @@ html {
   margin-left: 10%;
   margin-top: 2%;
   display: inline-block;
+  text-align: left;
 }
 
 .competences ul li {
@@ -216,8 +218,7 @@ margin-top: auto;
 
 .license #car {
   font-size: 5rem;
-    margin-right: auto;
-    margin-left: auto;
+margin-bottom: 125%; 
 }
 
 .languages {
@@ -227,8 +228,7 @@ margin-top: auto;
 
 .languages #flag {
   font-size: 5rem;
-    margin-right: auto;
-    margin-left: auto;
+margin-bottom: 120%;
 }
 
 .recommendations {
