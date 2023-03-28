@@ -108,19 +108,12 @@ html {
 
 .timeline ul li h2 {
   font-size: 1rem;
-  margin: 0;
-  padding: 0;
   font-weight: 600;
   color: #000;
 }
 
 .timeline ul li p {
   margin: 1rem 0 0;
-  padding: 0;
-}
-
-.timeline ul li .year h2 {
-  margin: 0;
   padding: 0;
 }
 
@@ -133,7 +126,7 @@ html {
   background: #000;
   color: #fff;
   box-shadow: 0 0 0 0.2rem #eee;
-  width: 8rem;
+  width: 7rem;
   text-align: center;
   height: 3rem;
 }
@@ -147,7 +140,7 @@ html {
   background: #000;
   color: #fff;
   box-shadow: 0 0 0 0.2rem #eee;
-  width: 8rem;
+  width: 7rem;
   text-align: center;
   height: 3rem;
 }
@@ -167,24 +160,27 @@ html {
   font-size: 0.7rem;
 }
 
+.competenceHeadline h1 {
+  text-align: center;
+  width: 100%; 
+}
+
 .competences{
   background-color: #fff;
   padding: 1rem;
   text-align:center;
+  display: table;
+  width: 100%;
 }
 
-.competences h1{
-  text-align: center; 
+.computerprograms, .license, .languages{
+  display: table-cell;
 }
-
-.computerprograms{
-  display: inline-block;
-  margin-top: auto;
-}
-.competences #desktop {
+.competences #desktop, #car, #flag {
   font-size: 5rem;
   margin-right: auto;
   margin-left: auto;
+    display: table;
 }
 
 .competences ul {
@@ -194,7 +190,7 @@ html {
   text-align: left;
 }
 
-.competences ul li {
+.competences li {
   font-size: 0.9rem;
 }
 
@@ -209,26 +205,6 @@ html {
 .skills h1 {
   text-align: center;
   padding: 0;
-}
-
-.license {
-display: inline-block;
-margin-top: auto; 
-}
-
-.license #car {
-  font-size: 5rem;
-margin-bottom: 125%; 
-}
-
-.languages {
-  display: inline-block;
-  margin-top: auto;
-}
-
-.languages #flag {
-  font-size: 5rem;
-margin-bottom: 120%;
 }
 
 .recommendations {
@@ -284,42 +260,24 @@ margin-bottom: 120%;
 }
 
 @media (min-width: 375px) and (max-width: 562px){
-  .computerprograms {
-      display: inline-block;
-      margin-top: auto;
-    }
-  
-    .license {
-      display: inline-block;
-      margin-top: auto;
-    }
-  
-    .languages {
-      display: inline-block;
-      margin-top: auto;
-    }
-  
-    .languages #desktop {
-      font-size: 3rem;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    .languages #car {
-      font-size: 3rem;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    .languages #flag {
-      font-size: 3rem;
-      margin-right: auto;
-      margin-left: auto;
-    }
+.computerprograms,
+  .license,
+  .languages {
+    display: table-cell;
+  }
+
+  .competences #desktop,
+  #car,
+  #flag {
+    font-size: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+  }
   
   
     .recommendations p {
-      font-size: 0.6rem;
+      font-size: 0.77rem;
     }
 }
 @media (min-width: 563px) and(max-width: 768px) {

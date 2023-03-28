@@ -13,11 +13,46 @@
 </head>
 
 <body>
+	<div id="google_translate_element"></div>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{ pageLanguage: "swe" },
+				"google_translate_element"
+			);
+		}
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 	<div class="container">
+	<!-- Top Navigation Menu -->
+	<div id="burgerMenuToggle">
+	<!-- <div class="topnavBurger"> -->
+		<!-- Navigation links (hidden by default) -->
+		<input type ="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id = "burgerMenu">
+		<!-- <div id="myBurgerLinks"> -->
+			<a href="#about"><li>Om mig</li></a>
+			<a href="#experiences"><li>Erfarenheter</li></a>
+			<a href="#skills"> <li>Färdigheter och kompetenser</li></a>
+			<a href="#extras"> <li>Rekommendationer</li> </a>
+			</ul>
+		<!-- </div> -->
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<!-- <a href="javascript:void(0);" class="icon" onclick="myBurgerFunction()">
+			<i class="fa-solid fa-bars"></i>
+		</a> -->
+	<!-- </div> -->
+	</div>
+
 		<header id="header">
 		<p> 
-			Curriculum Vitae <br>
-			Denice Marquez Larsson. 
+			Denice Marquez Larsson, 
+			<br>
+			.NET Developer.
 		</p>
 		</header>
 		<div class="topnav" >
@@ -35,7 +70,6 @@
 			<img src="cv_hemsida/bilder/denice1.2.jpg">
 			<img src="cv_hemsida/bilder/denice3.3.jpg">
 			<h1>Om mig</h1>
-			<br>
 			<p> 
 				Hej! <br>
 				Vad kul att du hittat hit!
@@ -102,12 +136,9 @@
 								Platchef för paraden, West Pride. 
 							</h2>
 							<p>
-								Ansvarade för paraden på sidan om studierna. Jag var kontaktperson till ett 50-tal organisationer och företag 
+								Ansvarade för paraden på sidan om studierna. Kontaktperson till ett 50-tal organisationer och företag 
 								som ville visa upp sig i paraden samt att jag även arbetade tätt ihop med trafikkontoter, mina chefer och 
 								västtrafik angående paradens väg. 
-								På grund av pandemin och dess restriktioner blev jag tidsbegränsad i mitt arbete och snickrade 
-								ihop en plan på ca 1.5-2 mån. 
-								Under genomförandet deltog ca 6000 personer i paraden. 
 							</p>
 						</div>
 						<div class="year">
@@ -205,7 +236,7 @@
 					<li>
 						<div class="text">
 							<h2>
-							Tog examen vid Linnéuniversitetet i Kalmar. 
+							Linnéuniversitetet, Kalmar. 
 							</h2>
 							<p>
 							Filosofie kandidatexamen med inriktning mot Music and Event Management.
@@ -226,17 +257,19 @@
 				Göteborgsvarvet - Löparservice. (2017 och 2021), EcoOnline (2021), Ica Almedal (2017), Eksjö Stadsfest(2014), bråvalla (2014). 
 			</p>
 		</div>
+		<div class="competenceHeadline">
+			<h1> <a name="skills"> Färdigheter och Kompetenser</a></h1>
+		</div>
 		<div class="competences">
-			<h1> <a name="education"> Färdigheter och Kompetenser</a></h1>
 			<div class="computerprograms">
-			<i class="fas fa-desktop" id="desktop"></i> 
+				<i class="fas fa-desktop" id="desktop"></i> 
 				<ul>
 					<li> .NET/C# </li>
 					<li>SQL Server</li>
-					<li>Mongo Db </li>
+					<li>MongoDB </li>
 					<li> HTML </li>
 					<li>CSS </li>
-					<li>Azure Devops</li>
+					<li>Azure DevOps</li>
 					<li>API:er</li>
 					<li>GraphQL</li>
 					<li>TDD</li>
@@ -316,5 +349,6 @@
 			</p>
 		</div>
 	</div>
+			<!-- <script src="index.js"></script> -->
 </body>
 </html>
