@@ -174,7 +174,12 @@ html {
 }
 
 .computerprograms, .license, .languages{
-  display: table-cell;
+  display: inline-table;
+  padding: inherit;
+}
+
+.computerprograms ul {
+  columns: 2; 
 }
 .competences #desktop, #car, #flag {
   font-size: 5rem;
@@ -275,10 +280,9 @@ html {
     display: table;
   }
   
-  
-    .recommendations p {
-      font-size: 0.77rem;
-    }
+  .recommendations p {
+    font-size: 0.77rem;
+  }
 }
 @media (min-width: 563px) and(max-width: 768px) {
   /*Mobilversion, Upp till padda portrait*/
