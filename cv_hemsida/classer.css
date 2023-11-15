@@ -41,7 +41,6 @@ html {
 }
 
 .timeline::before {
-  /*Ditt streck*/
   content: "";
   position: absolute;
   left: 50%;
@@ -213,9 +212,6 @@ html {
 }
 
 .recommendations {
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
   background-color: #C8B6A6;
 }
 
@@ -223,32 +219,37 @@ html {
   text-align: center;
 }
 .recommendations p {
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 0;
   background-color: #fff;
-  width: 50%;
-  padding: 2%;
+  width: 25%;
+  height: 15rem; 
+  padding: 1%;
   font-style: italic;
   display: inline-block;
+  font-size: 0.8rem;
 }
 
 .recommendations img {
-  width: 15%;
-  height: 15%;
-  border-radius: 50%;
-  vertical-align: 4rem;
-  margin-left: 10%;
+  width: 25%;
+  height: 15rem;
+}
+
+.emilia {
+  display: inline-flex;
+  margin-left: 25%;
+  width: 100%;
+}
+
+.daniel {
   display: inline-block;
+  margin-left: 25%;
+  width: 100%;
 }
 
-.recommendations .allan p {
-  margin-bottom: 3%;
-  justify-content: center;
+.daniel p{
+  float:left;
+  width: 25%; 
 }
-
-.recommendations .allan img {
-  vertical-align: -30%;
+.daniel img {
 }
 
 .footer p {
@@ -317,27 +318,22 @@ html {
     margin-left: auto;
   }
 
-
 .recommendations p{
   font-size: 0.6rem;
 }
-}
+
 @media (min-width: 769px) and (max-width: 992px) {
   /*Padda portrait*/
   .recommendations img {
-    vertical-align: 2rem;
-  }
-  .recommendations .allan img {
-    vertical-align: -50%;
+    /* vertical-align: 2rem; */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 993px) {
   /*Padda Landscape & Desktop*/
-  .recommendations img {
-    vertical-align: 1rem;
-  }
-  .recommendations .allan img {
-    vertical-align: -60%;
-  }
+  /* .recommendations img {
+    /* vertical-align: -5.5rem; */
+} 
 }
