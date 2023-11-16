@@ -220,8 +220,8 @@ html {
 }
 .recommendations p {
   background-color: #fff;
-  width: 25%;
-  height: 15rem; 
+  width: 30%;
+  height: 16rem; 
   padding: 1%;
   font-style: italic;
   display: inline-block;
@@ -229,27 +229,54 @@ html {
 }
 
 .recommendations img {
-  width: 25%;
-  height: 15rem;
+  width: 30%;
+  height: 16rem;
+  display: flex;
+}
+
+.christoffer {
+  display: inline-block;
+  margin-left: 20%;
+  width: 100%;
+}
+
+.christoffer p {
+  float: left;
+  width: 30%;
+}
+
+.christoffer img {
+  display: inline-block;
 }
 
 .emilia {
-  display: inline-flex;
-  margin-left: 25%;
+  display: flex;
+  margin-left: 20%;
   width: 100%;
 }
 
 .daniel {
   display: inline-block;
-  margin-left: 25%;
+  margin-left: 20%;
   width: 100%;
 }
 
 .daniel p{
   float:left;
-  width: 25%; 
+  width: 30%; 
 }
-.daniel img {
+
+.daniel img{
+  display: inline-block;
+}
+
+.footer p {
+  width: 100%;
+  height: auto;
+  background-color: #698269;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer p {
